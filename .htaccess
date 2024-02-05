@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^laptopnusantara\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.laptopnusantara\.id$
+RewriteRule ^/?$ "https\:\/\/laptopnusantara\.id\/" [R=301,L]
+
