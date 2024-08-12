@@ -1,3 +1,7 @@
+// WA click
+document.getElementById('whatsappButton').addEventListener('click', function() {
+    fetch('https://logclick.sibayakkomputer.id/log_click.php', { method: 'POST' });
+  });
 
 // preloader
 $(window).load(function(){
